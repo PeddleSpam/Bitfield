@@ -110,7 +110,7 @@ private:
 
 public:
 
-  static constexpr auto value = helper<Args...>::value;
+  static constexpr auto value = helper<void, Args...>::value;
 };
 
 template<typename... Args>
